@@ -1,3 +1,4 @@
+// *Function adds two numbers
 function index(a, b) {
   return a + b;
 }
