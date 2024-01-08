@@ -1,6 +1,6 @@
 // *Function adds two numbers
-function index(a, b) {
-  return a + b;
+function wordsCount(str) {
+  return str.split(" ").lenght;
 }
 
-console.assert(index(8, 9) === 17);
+console.assert(wordsCount("Hello world!") === 2);
