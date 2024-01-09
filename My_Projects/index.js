@@ -35,6 +35,25 @@
 
 // // alert(nums);
 
-let name_1 = prompt("whats u name?");
+// let name_1 = prompt("whats u name?");
 
-let result = alert(`Hello ${name_1}`);
+// let result = alert(`Hello ${name_1}`);
+
+let a = 1;
+let b = 0;
+
+// if (a) {
+//   console.log("Diana");
+// } else if (b) {
+//   console.log("Alex");
+// } else {
+//   console.log("alex & diana");
+// }
+
+switch (a) {
+  case 1:
+    console.log("alex");
+  case 2:
+    console.log("diana");
+    break;
+}
