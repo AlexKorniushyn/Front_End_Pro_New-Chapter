@@ -13,6 +13,5 @@ if (operator === "+") {
   result = firstOperand * secondtOperand;
 } else {
   alert("Миша все хуйня, давай по новой!");
-  operator;
 }
 alert(`${firstOperand} ${operator} ${secondtOperand} = ${result}`);
