@@ -1,59 +1,30 @@
-// // Home task #8
+const operator = prompt("enter operator +,-,/,*");
+const firstOperand = getOperand("first");
+const secondOperand = getOperand("second");
 
-// const arrayLength = prompt("Please type the array length");
-// if (isNaN(arrayLength)) {
-//   alert("Array length should be a number");
-// }
-// const array = [];
+const result = calculate(operator, firstOperand, secondOperand);
+showResult(firstOperand, operator, secondOperand, result);
 
-// for (let i = 0; i < arrayLength; i++) {
-//   const arrayElement = prompt("Please enter numbers array element ") || "empty";
-//   if (isNaN(arrayElement)) {
-//     alert("Array element should be a number");
-//   }
-//   array.push(arrayElement);
-// }
+function getOperand(operand) {
+  return Number(prompt(`enter ${operand} operand`, "3"));
+}
 
-// console.log("Arr=", array);
-// array.sort(function (a, b) {
-//   return a - b;
-// });
-// console.log("Array after sorting is:", array);
+function calculate(operator, first, second) {
+  let result;
+  if (operator === "+") {
+    result = first + second;
+  } else if (operator === "-") {
+    result = first - second;
+  } else if (operator === "/") {
+    result = first / second;
+  } else if (operator === "*") {
+    result = first * second;
+  } else {
+    alert("Миша все хуйня, давай по новой!");
+  }
+  return result;
+}
 
-// array.splice(2, 3);
-// console.log("Array after removing elements is:", array);
-
-// // const nums = Array.from({ length: 6 }).map((_, i) =>
-// //   prompt(`Enter your element #${i + 1}`)
-// // );
-
-// // nums.sort(function (a, b) {
-// //   return a - b;
-// // });
-
-// // nums.splice(2, 3);
-
-// // alert(nums);
-
-// let name_1 = prompt("whats u name?");
-
-// let result = alert(`Hello ${name_1}`);
-
-let a = 1;
-let b = 0;
-
-// if (a) {
-//   console.log("Diana");
-// } else if (b) {
-//   console.log("Alex");
-// } else {
-//   console.log("alex & diana");
-// }
-
-switch (a) {
-  case 1:
-    console.log("alex");
-  case 2:
-    console.log("diana");
-    break;
+function showResult(first, operator, second, result) {
+  return alert(`${first} ${operator} ${second} = ${result}`);
 }
